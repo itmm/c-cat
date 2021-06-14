@@ -12,5 +12,4 @@ int main(int argc, const char *argv[]) {
 		std::ifstream in { file.c_str() };
 		std::cout << in.rdbuf() << '\n';
 	}
-	return 0;
 }
