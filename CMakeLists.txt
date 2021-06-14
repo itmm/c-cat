@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.19)
-project(c_cat)
+project(c-cat)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(c_cat main.cpp)
+add_executable(c-cat main.cpp)
