@@ -8,7 +8,7 @@ int main(int argc, const char *argv[]) {
 		files.insert(argv[i]);
 	}
 	for (const auto &file : files) {
-		std::cout << "#line 1 " << file << '\n';
+		std::cout << "#line 1 \"" << file << "\"\n";
 		std::ifstream in { file.c_str() };
 		std::cout << in.rdbuf() << '\n';
 	}
