@@ -1,16 +1,16 @@
 #include <iostream>
-#include <set>
+#include <vector>
 #include <fstream>
 
 int main(int argc, const char *argv[]) {
-	std::set<std::string> files;
+	std::vector<std::string> files;
 	std::string base_dir;
 	for (int i { 1 }; i < argc; ++i) {
 		std::string f { argv[i] };
 		if (f.substr(0, 7) == "--base=") {
 			base_dir = f.substr(7);
 		} else {
-			files.insert(f);
+			files.push_back(f);
 		}
 	}
 	for (const auto &file : files) {
